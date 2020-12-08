@@ -1,66 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00524654-146a-4807-a42d-491fd54a7259" name="Default Changelist" comment="" />
+    <list default="true" id="3fdcb671-78db-4dbb-bcb7-abffc29180e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/data/EventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1l7tl0kajGYxmTX5xIIPohKQmu6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="00524654-146a-4807-a42d-491fd54a7259" name="Default Changelist" comment="" />
-      <created>1606959768069</created>
+      <changelist id="3fdcb671-78db-4dbb-bcb7-abffc29180e4" name="Default Changelist" comment="" />
+      <created>1606960105451</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606959768069</updated>
+      <updated>1606960105451</updated>
     </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/Users/Don/Desktop/recLeagueOrganizer/.idea" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -68,21 +75,15 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="87" y="71" width="1416" height="716" key="DiffContextDialog" timestamp="1607398988002">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state x="427" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607207233174">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="87" y="71" width="1416" height="716" key="DiffContextDialog/0.0.1600.900@0.0.1600.900" timestamp="1607398988002" />
-    <state x="580" y="205" key="FileChooserDialogImpl" timestamp="1607399157233">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state x="427" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607207233174" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607206559887">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="580" y="205" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1607399157233" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607206559887" />
   </component>
 </project>
