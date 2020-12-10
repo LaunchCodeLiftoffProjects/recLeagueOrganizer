@@ -1,27 +1,58 @@
 package com.launchcode.RecLeagueOrganizer.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
+@Entity
 public class User {
 
+    @NotNull
+    private String username;
+    private String password;
+    private String email;
+
+    @Id
+    @GeneratedValue
     private int id;
-    private static int nextId = 1;
 
-    private String name;
-    private Integer UserAge;
-    private SkillLevel skillLevel;
+    public User() {}
 
-    //Initialize a unique ID.
-    public User() {
-        id = nextId;
-        nextId++;
+    public User(String username, String password, String email) {
+
+        this.username = username;
+        this.password = password;
+        this.email = email;
+
     }
 
-    // Initialize the id and value fields.
-    public User(String aName, Integer UserAge, SkillLevel aSkillLevel) {
-        this();
-        name = aName;
-        age = UserAge;
-        skillLevel = aSkillLevel;
+    public int getId() {
+        return id;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
 }
