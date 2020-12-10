@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fdcb671-78db-4dbb-bcb7-abffc29180e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/data/EventRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/controllers/EventController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -53,6 +55,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="launchcode.RecLeagueOrganizer.controllers" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,15 +82,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="427" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607207233174">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607207233174" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607397115010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607397115010" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607206559887">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607206559887" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1607396460586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607396460586" />
   </component>
 </project>
