@@ -1,4 +1,4 @@
-package launchcode.RecLeagueOrganizer.controllers;
+package com.launchcode.RecLeagueOrganizer.controllers;
 
 @Controller
 public class EventController {

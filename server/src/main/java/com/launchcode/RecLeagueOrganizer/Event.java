@@ -1,4 +1,4 @@
-package launchcode.RecLeagueOrganizer;
+package com.launchcode.RecLeagueOrganizer;
 
 public class Event {
 
