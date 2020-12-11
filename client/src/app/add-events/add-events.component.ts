@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EventsServiceService } from '../events-service.service';
 
 
 @Component({
@@ -11,7 +12,7 @@ export class AddEventsComponent implements OnInit {
 
   eventForm:FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private eventsService: EventsServiceService) { }
 
   form(){
     this.eventForm = this.formBuilder.group({
@@ -32,6 +33,7 @@ export class AddEventsComponent implements OnInit {
 
   savePost(eventForm){
     console.log(eventForm);
+    this.eventsService.createEvent(eventForm).subscribe();
   }
 
 }

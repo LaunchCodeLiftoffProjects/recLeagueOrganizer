@@ -19,5 +19,22 @@ const httpOptions = {
 })
 export class EventsServiceService {
 
-  constructor() { }
+  baseURL: string = '//localhost:8080/';
+
+  constructor(private http: HttpClient) { }
+
+  createEvent(event: any): Observable<any>{
+    let params = {name: event.name.toString(), 
+      time: event.time.toString(),
+      location: event.location.toString(),
+      activityType: event.activityType.toString(),
+      ageLevel: event.ageLevel.toString(),
+      skillLevel: event.skillLevel.toString(),
+      numberPlayers: event.numberPlayers.toString(),
+      equipment: event.equipment.toString()
+    }
+    return this.http.post(`${this.baseURL}add-event`, params, httpOptions);
+              
+  }
+
 }
