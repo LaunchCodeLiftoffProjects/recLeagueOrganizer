@@ -10,6 +10,7 @@ public class Event {
     @GeneratedValue
     private int id;
 
+    private String name;
     private String location;
     private String date;
     private String time;
@@ -34,6 +35,18 @@ public class Event {
         this.isEquipmentRequired = isEquipmentRequired;
         this.ageLevel = ageLevel;
         this.skillLevel = skillLevel;
+    }
+
+    public Event(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getLocation() {
