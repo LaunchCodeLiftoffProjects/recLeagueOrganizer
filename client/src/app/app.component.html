@@ -1,7 +1,27 @@
 
-<!-- <app-register></app-register> -->
+<!--app-register></app-register>
 <app-login></app-login>
-
 <app-add-events></app-add-events>
+<app-search></app-search>
+<app-profile></app-profile-->
 
-<router-outlet></router-outlet>
+
+
+<header>
+    <div class = "container">
+        <a href = "#" class = 'logo'>RecLeague Home</a>
+        <nav>
+            <ul>
+                <li><a routerLink = 'login'>Login</a></li>
+                <li><a routerLink = 'register'>Register</a></li>
+                <li><a routerLink = 'add-events'>Add Event</a></li>
+                <li><a routerLink = 'search'>Search Events</a></li>
+                <li><a routerLink = 'profile'>Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

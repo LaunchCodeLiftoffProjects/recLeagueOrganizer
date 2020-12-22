@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --mainColor: #0000ff;
+    --secondaryColor: #777fff;
+    --fontColor1: #ffffff;
+    --fontColor2: #000000
+}
+
+body {
+    margin: 0;
+    font-size: 18px
+    }
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: var(--mainColor);
+    padding: 1em 0;
+}
+
+a {
+        color:var(--fontColor1);
+        text-decoration: none;
+}
+
+a.logo{
+        font-weight: bold;
+}
+
+nav{
+    float:right;
+}    
+        
+ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    }
+    
+li{
+    text-indent: 5em;
+}
+
+
+

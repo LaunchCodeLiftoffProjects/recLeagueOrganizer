@@ -1,20 +1,29 @@
 <div class="UserRegistration">
+
     <div style="text-align: center">
     
-    </div>
-    <div>
-        <form [formGroup]="userSaveForm" (ngSubmit)="saveUser(userSaveForm.value)">          
-            <label for="username">Create UserName</label><br>
-            <input type="text" id="username" formControlName="username"><br><br>
-            <label for="email">Create UserName</label><br>
-            <input type="text" id="email" formControlName="email"><br><br>
-            <label for="password">Create Password</label><br>
-            <input type="password" id="password" formControlName="password"><br><br>
-            <label for="verify" >Verify Password</label><br>
-            <input type="password" id="verify" formControlName="verify"><br><br>
-            <input type="submit">
+        <div>
+
+            <form [formGroup]="userSaveForm" (ngSubmit)="saveUser(userSaveForm.value)">    
+
+                <label for="username">Create username</label><br>
+                <input type="text" id="username" formControlName="username"><br><br>
+                
+                <label for="email">Verify username</label><br>
+                <input type="text" id="email" formControlName="email"><br><br>
+
+                <label for="password">Create password</label><br>
+                <input type="password" id="password" formControlName="password"><br><br>
+                
+                <label for="verify" >Verify password</label><br>
+                <input type="password" id="verify" formControlName="verify"><br><br>
+
+                <input type="submit">
     
-        </form>   
+            </form>   
             
+        </div>
+
     </div>
-    </div>
+
+</div>
