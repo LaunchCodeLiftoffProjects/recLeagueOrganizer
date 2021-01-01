@@ -6,13 +6,13 @@
 
             <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">  
 
-                <label for="email">username</label><br>
-                <input type="text" id="email" formControlName="email"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" formControlName="email"><br><br>
 
                 <label for="password">password</label><br>
                 <input type="password" id="password" formControlName="password"><br><br>
 
-                <input type="submit">    
+                <input type="submit" value="Submit">    
                 
             </form><br>    
 
