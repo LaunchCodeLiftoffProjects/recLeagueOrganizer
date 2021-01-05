@@ -37,4 +37,9 @@ export class EventsServiceService {
               
   }
 
+  search(searchTerm: string): Observable<any>{
+    let params =searchTerm.toString();
+    return this.http.post(`${this.baseURL}search/events`, params, httpOptions);
+  }
+
 }

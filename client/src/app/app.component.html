@@ -4,4 +4,9 @@
 
 <app-add-events></app-add-events>
 
+<form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
+    <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm"><br>
+    <input type="submit" value="submit">
+</form>
+
 <router-outlet></router-outlet>
