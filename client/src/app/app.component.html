@@ -6,6 +6,12 @@
                 <ul>
                     <li><a routerLink = 'login'>Login</a></li>
                     <li><a routerLink = 'register'>Register</a></li>
+                    <li>
+                        <form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
+                            <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm"><br>
+                            <input type="submit" value="submit">
+                        </form>
+                    </li>
                     <!--li><a routerLink = 'add-events'>Add Event</a></li>
                     <li><a routerLink = 'search'>Search Events</a></li>
                     <li><a routerLink = 'profile'>Profile</a></li-->
@@ -15,12 +21,5 @@
       </header>
       
 
-
-
-
-<form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
-    <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm"><br>
-    <input type="submit" value="submit">
-</form>
 
 <router-outlet></router-outlet>
