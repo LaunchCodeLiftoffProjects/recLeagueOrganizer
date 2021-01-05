@@ -1,15 +1,25 @@
 <div class="Login">
+
     <div style="text-align: center">
     
+        <div>
+
+            <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">  
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" formControlName="email"><br><br>
+
+                <label for="password">password</label><br>
+                <input type="password" id="password" formControlName="password"><br><br>
+
+                <input type="submit" value="Submit">    
+                
+            </form><br>    
+
+            <button (click)="logout()">Log Out</button>
+
+        </div>
+
     </div>
-    <div>
-        <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">          
-            <label for="email">Create UserName</label><br>
-            <input type="text" id="email" formControlName="email"><br><br>
-            <label for="password">Create Password</label><br>
-            <input type="password" id="password" formControlName="password"><br><br>
-            <input type="submit">    
-        </form><br>    
-        <button (click)="logout()">Log Out</button>
-    </div>
-    </div>
+
+</div>

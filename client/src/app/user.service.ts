@@ -25,16 +25,18 @@ export class UserService {
     let params = {email: user.email.toString(), username: user.username.toString(),
       password: user.password.toString()
     }
-    return this.http.post(`${this.baseURL}addUser`, params, httpOptions)}
+    return this.http.post(`${this.baseURL}addUser`, params, httpOptions)
+  }
 
-    userLogin(user: any): Observable<any>{
-      let params = {email: user.email.toString(), password: user.password.toString()
-      }
-      return this.http.post(`${this.baseURL}userLogin`, params, httpOptions)}
+  userLogin(user: any): Observable<any>{
+    let params = {email: user.email.toString(), password: user.password.toString()
+    }
+    return this.http.post(`${this.baseURL}userLogin`, params, httpOptions)
+  }
 
-    userlogout() {
-      localStorage.setItem("userid", null);
-      localStorage.removeItem("userid");
-    }  
+  userlogout() {
+    localStorage.setItem("userid", null);
+    localStorage.removeItem("userid");
+  }  
 }
 
