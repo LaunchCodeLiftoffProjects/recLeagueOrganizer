@@ -35,8 +35,8 @@ export class UserService {
   }
 
   userlogout() {
-    localStorage.setItem("userid", null);
-    localStorage.removeItem("userid");
+    localStorage.setItem("userId", "");
+    localStorage.removeItem("userId");
   }  
 }
 
