@@ -21,9 +21,9 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  registerUser(user: any): Observable<any>{
-    let params = {email: user.email.toString(), username: user.username.toString(),
-      password: user.password.toString()
+  registerUser(userForm: any): Observable<any>{
+    let params = {email: userForm.email.toString(), username: userForm.username.toString(),
+      password: userForm.password.toString()
     }
     return this.http.post(`${this.baseURL}addUser`, params, httpOptions)
   }

@@ -25,8 +25,11 @@ export class LoginComponent implements OnInit {
   loginUser(user){
     this.userService.userLogin(user).subscribe(
       e =>{
-        localStorage.setItem("userId" , e);
-  
+        if(!e){
+          alert("Incorrect credentials, loser.")
+        } else {
+        localStorage.setItem("userId" , e.id);
+      }
       });
  
   }
