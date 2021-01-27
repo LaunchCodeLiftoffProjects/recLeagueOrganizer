@@ -8,7 +8,7 @@
                     <li><a routerLink = 'register'>Register</a></li>
                     <li>
                         <form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
-                            <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm"><br>
+                            <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm">
                             <input type="submit" value="submit">
                         </form>
                     </li>
