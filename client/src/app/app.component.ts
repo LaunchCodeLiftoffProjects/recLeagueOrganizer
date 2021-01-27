@@ -10,14 +10,8 @@ import { EventsServiceService } from './events-service.service';
 })
 
 export class AppComponent {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  title = 'RecLeagueOrganizer';
-=======
-=======
 
->>>>>>> e3067dcd8845284de76f660bb51ccc339db43a46
-  title = 'client';
+  title = 'RecLeagueOrganizer';
 
   searchForm:FormGroup;
 
@@ -37,11 +31,5 @@ export class AppComponent {
     console.log(searchForm);
     this.eventsService.search(searchForm).subscribe((e)=>{console.log(e)});
   }
-
-<<<<<<< HEAD
->>>>>>> dc6b44e6e5affd94361cd3a0aa3b388230f969c5
-=======
-
->>>>>>> e3067dcd8845284de76f660bb51ccc339db43a46
 }
 
