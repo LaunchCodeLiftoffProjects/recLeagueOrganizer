@@ -31,7 +31,8 @@ export class EventsServiceService {
       ageLevel: event.ageLevel.toString(),
       skillLevel: event.skillLevel.toString(),
       numberPlayers: event.numberPlayers.toString(),
-      equipment: event.equipment.toString()
+      equipment: event.equipment.toString(),
+      userId: localStorage.getItem("userId")
     }
     return this.http.post(`${this.baseURL}add-event`, params, httpOptions);
               

@@ -2,6 +2,7 @@ package com.launchcode.RecLeagueOrganizer.controllers;
 
 import com.launchcode.RecLeagueOrganizer.models.Event;
 import com.launchcode.RecLeagueOrganizer.models.data.EventRepository;
+import com.launchcode.RecLeagueOrganizer.models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +19,7 @@ public class EventController {
     EventRepository eventRepository;
 
     @Autowired
-    EventRepository eventRepository;
+    UserRepository userRepository;
 
     @PostMapping("/add-event")
     public boolean addPost(@RequestBody Map<String, String> params){
@@ -32,7 +33,7 @@ public class EventController {
             newEvent.setEventType(params.get("activityType"));
             newEvent.setAgeLevel(params.get("ageLevel"));
             newEvent.setEquipmentRequired(true);
-
+            newEvent.setUser(userRepository.findById(Integer.parseInt(params.get("userId"))).get());
             eventRepository.save(newEvent);
             success=true;
         } catch (Exception e){
