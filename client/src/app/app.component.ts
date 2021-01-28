@@ -11,7 +11,7 @@ import { EventsServiceService } from './events-service.service';
 
 export class AppComponent {
 
-  title = 'client';
+  title = 'RecLeagueOrganizer';
 
   searchForm:FormGroup;
 
@@ -31,7 +31,5 @@ export class AppComponent {
     console.log(searchForm);
     this.eventsService.search(searchForm).subscribe((e)=>{console.log(e)});
   }
-
-
 }
 

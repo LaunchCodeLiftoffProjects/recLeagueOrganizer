@@ -17,12 +17,12 @@ public class HomeController {
     UserRepository userRepository;
 
     @PostMapping("/addUser")
-    public boolean registerUserToDatabase(@RequestBody Map<String, String> body) {
+    public boolean registerUserToDatabase(@RequestBody Map<String, String> params) {
         try{
             User newUser = new User();
-            newUser.setEmail(body.get("email"));
-            newUser.setUsername(body.get("username"));
-            newUser.setPassword(body.get("password"));
+            newUser.setEmail(params.get("email"));
+            newUser.setUsername(params.get("username"));
+            newUser.setPassword(params.get("password"));
             userRepository.save(newUser);
             return true;
         } catch (Exception e) {

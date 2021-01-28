@@ -3,6 +3,9 @@ package com.launchcode.RecLeagueOrganizer.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
 @Entity
 public class Event {
 
@@ -21,11 +24,15 @@ public class Event {
     private String ageLevel;
     private String skillLevel;
 
+    @ManyToOne
+    @NotNull(message = "User is required")
+    private User user;
+
     public Event() {
 
     }
 
-    public Event(String location, String date, String time, int numberOfPlayers, int score, String eventType, boolean isEquipmentRequired, String ageLevel, String skillLevel) {
+    public Event(String location, String date, String time, int numberOfPlayers, int score, String eventType, boolean isEquipmentRequired, String ageLevel, String skillLevel, User user) {
         this.location = location;
         this.date = date;
         this.time = time;
@@ -35,6 +42,16 @@ public class Event {
         this.isEquipmentRequired = isEquipmentRequired;
         this.ageLevel = ageLevel;
         this.skillLevel = skillLevel;
+        this.user = user;
+
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Event(String name) {
