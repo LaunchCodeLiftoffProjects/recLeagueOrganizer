@@ -45,7 +45,6 @@ public class HomeController {
         }
     }
 
-
     @GetMapping("add")
     public String displayAddRegistrationForm(Model model) {
 
@@ -54,5 +53,12 @@ public class HomeController {
 
     }
 
+    @GetMapping("form")
+    public String displayForm(Model model) {
+
+        model.addAttribute(new User());
+        return "form";
+
+    }
 
 }

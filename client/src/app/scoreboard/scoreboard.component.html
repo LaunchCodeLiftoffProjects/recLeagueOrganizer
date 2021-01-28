@@ -1,0 +1,15 @@
+<div>
+    <form [formGroup]="score1Form" (ngSubmit)="saveScore(1, score1Form.value)">
+        <input type="number" id="score1" name="score1" formControlName="score1"><br><br>
+        <input type="submit" value="Submit">
+      
+    </form>
+    <form [formGroup]="score2Form" (ngSubmit)="saveScore(2, score2Form.value)">
+        <input type="number" id="score2" name="score2" formControlName="score2"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>Teams</h3>
+    <ul>
+        <li *ngFor="let team of teams">{{team.name}}</li>
+    </ul>
+</div>

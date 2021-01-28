@@ -12,6 +12,7 @@ import { AddEventsComponent } from './add-events/add-events.component';
 import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 
 
 
@@ -23,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     AddEventsComponent,
     SearchComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    ScoreboardComponent
   ],
   imports: [
     BrowserModule,
