@@ -1,11 +1,13 @@
 
     <header>
         <div class = "container">
-            <a href = "#" class = 'logo'>RecLeague Home</a>
+            <a href = "home" class = 'logo'>RecLeague Home</a>
             <nav>
                 <ul>
-                    <li><a routerLink = 'login'>Login</a></li>
-                    <li><a routerLink = 'register'>Register</a></li>
+                    <li *ngIf="!loggedin"><a routerLink = 'login'>Login</a></li>
+                    <li *ngIf="!loggedin"><a routerLink = 'register'>Register</a></li>
+                    <li *ngIf="loggedin"><button (click)="logout()">Log Out</button></li>
+                    <li *ngIf="loggedin"><a routerLink = 'add-events'>Add Events</a></li>
                     <li>
                         <form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
                             <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm">
@@ -21,10 +23,8 @@
       </header>
       
 
-<form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
+<!-- <form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
     <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm"><br>
     <input type="submit" value="submit">
-</form>
-
-<router-outlet></router-outlet>
+</form> -->
 <router-outlet></router-outlet>

@@ -31,10 +31,15 @@ public class HomeController {
 
     }
     @PostMapping("/userLogin")
-    public User verifyLogin(@RequestBody Map<String, String> body) {
+    public User verifyLogin(@RequestBody Map<String, String> params) {
         try{
-            User user = userRepository.findByEmail(body.get("email")).get();
-            return user;
+            User user = userRepository.findByEmail(params.get("email")).get();
+            if(user.getPassword().equals((params.get("password")))){
+                return user;
+            }
+            else{
+                return null;
+            }
         } catch (Exception e) {
             return null;
         }

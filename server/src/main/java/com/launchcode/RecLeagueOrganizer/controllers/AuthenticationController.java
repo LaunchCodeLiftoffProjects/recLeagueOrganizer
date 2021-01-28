@@ -24,7 +24,7 @@ public class AuthenticationController {
 
         Optional<User> user = userRepository.findById(userId);
 
-        if (user.isEmpty()) {
+        if (user.get().getEmail().isEmpty()) {
             return null;
         }
 

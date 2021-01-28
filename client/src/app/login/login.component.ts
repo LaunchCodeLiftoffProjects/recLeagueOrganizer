@@ -2,6 +2,7 @@ import { keyframes } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, FormBuilder, } from '@angular/forms';
 import { UserService } from '../user.service';
+import { Router, RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import { UserService } from '../user.service';
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup; 
-  constructor(private fb:FormBuilder, private userService:UserService) {
+  constructor(private router: Router, private fb:FormBuilder, private userService:UserService) {
 
    }
 
@@ -26,16 +27,19 @@ export class LoginComponent implements OnInit {
     this.userService.userLogin(user).subscribe(
       e =>{
         if(!e){
-          alert("Incorrect credentials, loser.")
-        } else {
-        localStorage.setItem("userId" , e.id);
-      }
+          alert("Incorrect credentials, loser.");
+        }
+        else{
+          localStorage.setItem("userId" , e.id);
+          this.router.navigate(['/home']);
+        }
       });
  
   }
 
   logout(){
-    this.userService.userlogout(); 
+    this.userService.userlogout();
+    this.router.navigate(['/home']);
   }
 
   ngOnInit() {

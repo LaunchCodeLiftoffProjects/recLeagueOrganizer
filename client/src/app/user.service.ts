@@ -25,7 +25,7 @@ export class UserService {
     let params = {email: userForm.email.toString(), username: userForm.username.toString(),
       password: userForm.password.toString()
     }
-    return this.http.post(`${this.baseURL}addUser`, params, httpOptions)
+    return this.http.post(`//localhost:8080/addUser`, params, httpOptions)
   }
 
   userLogin(user: any): Observable<any>{
@@ -37,6 +37,7 @@ export class UserService {
   userlogout() {
     localStorage.setItem("userId", "");
     localStorage.removeItem("userId");
+    
   }  
 }
 
