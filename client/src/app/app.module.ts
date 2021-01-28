@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { AddEventsComponent } from './add-events/add-events.component';
 import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 
 
 
@@ -21,7 +22,8 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     AddEventsComponent,
     SearchComponent,
-    ProfileComponent
+    ProfileComponent,
+    ScoreboardComponent
   ],
   imports: [
     BrowserModule,
