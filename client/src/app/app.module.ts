@@ -33,8 +33,13 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule],
-    exports: [ RouterModule ],
+    RouterModule
+  ],
+  entryComponents: [
+    LoginComponent
+  ],
+
+  exports: [ RouterModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

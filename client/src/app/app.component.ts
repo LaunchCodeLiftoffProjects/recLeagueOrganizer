@@ -42,7 +42,7 @@ export class AppComponent {
 
   logout(){
     this.userService.userlogout();
-    this.router.navigate(['/home']);
+    window.location.replace('/home');
   }
 }
 

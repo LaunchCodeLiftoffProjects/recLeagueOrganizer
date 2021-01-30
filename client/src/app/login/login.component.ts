@@ -29,17 +29,19 @@ export class LoginComponent implements OnInit {
         if(!e){
           alert("Incorrect credentials, loser.");
         }
+
         else{
           localStorage.setItem("userId" , e.id);
-          this.router.navigate(['/home']);
+          window.location.replace('/home');
         }
+        
       });
- 
-  }
+  };
 
   logout(){
     this.userService.userlogout();
-    this.router.navigate(['/home']);
+    window.location.replace('/home');
+    ;
   }
 
   ngOnInit() {
