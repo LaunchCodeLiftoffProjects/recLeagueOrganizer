@@ -23,14 +23,14 @@ public class SearchController {
         System.out.println(searchTerm.get("searchTerm"));
         List<Event> searchResults = new ArrayList<Event>();
         for(Event event: eventRepository.findAll()) {
-            if(event.getName().contains(searchTerm.get("searchTerm")) ||
-                    event.getSkillLevel().contains(searchTerm.get("searchTerm")) ||
-                    event.getLocation().contains(searchTerm.get("searchTerm")) ||
-                    event.getEventType().contains(searchTerm.get("searchTerm")) ||
-                    searchTerm.get("searchTerm").contains(event.getName()) ||
-                    searchTerm.get("searchTerm").contains(event.getSkillLevel()) ||
-                    searchTerm.get("searchTerm").contains(event.getEventType()) ||
-                    searchTerm.get("searchTerm").contains(event.getLocation())){
+            if(event.getName().toLowerCase().contains(searchTerm.get("searchTerm").toLowerCase()) ||
+                    event.getSkillLevel().toLowerCase().contains(searchTerm.get("searchTerm").toLowerCase()) ||
+                    event.getLocation().toLowerCase().contains(searchTerm.get("searchTerm").toLowerCase()) ||
+                    event.getEventType().toLowerCase().contains(searchTerm.get("searchTerm").toLowerCase()) ||
+                    searchTerm.get("searchTerm").toLowerCase().contains(event.getName().toLowerCase()) ||
+                    searchTerm.get("searchTerm").toLowerCase().contains(event.getSkillLevel().toLowerCase()) ||
+                    searchTerm.get("searchTerm").toLowerCase().contains(event.getEventType().toLowerCase()) ||
+                    searchTerm.get("searchTerm").toLowerCase().contains(event.getLocation().toLowerCase())){
                 searchResults.add(event);
             }
         }

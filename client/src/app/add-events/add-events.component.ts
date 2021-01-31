@@ -26,6 +26,7 @@ export class AddEventsComponent implements OnInit {
       equipment:['']
     })
   }
+  
 
   ngOnInit() {
     this.form();  
@@ -35,5 +36,7 @@ export class AddEventsComponent implements OnInit {
     console.log(eventForm);
     this.eventsService.createEvent(eventForm).subscribe();
   }
+
+
 
 }

@@ -33,6 +33,7 @@ public class EventController {
             newEvent.setEventType(params.get("activityType"));
             newEvent.setAgeLevel(params.get("ageLevel"));
             newEvent.setEquipmentRequired(true);
+            newEvent.setNumberOfPlayers(Integer.parseInt(params.get("numberPlayers")));
             newEvent.setUser(userRepository.findById(Integer.parseInt(params.get("userId"))).get());
             eventRepository.save(newEvent);
             success=true;
