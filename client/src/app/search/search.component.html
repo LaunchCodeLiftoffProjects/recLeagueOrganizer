@@ -1,56 +1,7 @@
+<div>
 
+    <ul>
+      <li *ngFor="let event of events">{{ event.id }}</li>
+    </ul>
 
-<div class = 'AddEvent'>
-
-    <div style="text-align: center">
-    
-        <form [formGroup]="eventForm" (ngSubmit)="savePost(eventForm.value)">
-    
-            <label for="name">Event Name</label><br>
-            <input type="text" id="name" name="name" formControlName="name"><br><br>
-    
-            <label for="time">Date and Time</label><br>
-            <input type="datetime-local" id="time" name="time" formControlName="time"><br><br>
-    
-            <label for="location">Location</label><br>
-            <input type="text" id="location" name="location" formControlName="location"><br><br>
-    
-            <label for="activityType">Activity Type</label><br>
-            <select name="activityType" id="activityType" formControlName="activityType">
-    
-                <option value="basketball">Basketball</option>
-                <option value="volleyball">Volleyball</option>
-                <option value="kickball">Kickball</option>
-                <option value="baseball">Baseball</option>
-    
-            </select><br><br>
-    
-            <label for="ageLevel">Age Level</label><br>
-            <select name="ageLevel" id="ageLevel" formControlName="ageLevel"><br><br>
-    
-                <option value="5-9">5-9</option>
-                <option value="10-13">10-13</option>
-                <option value="14-18">14-18</option>
-                <option value="18+">18+</option>
-    
-            </select><br><br>
-    
-            <label for="skillLevel">Skill Level</label><br>
-            <select name="skillLevel" id="skillLevel" formControlName="skillLevel">
-    
-                <option value="novice">Novice</option>
-                <option value="amateur">Amateur</option>
-                <option value="professional">Professional</option>
-    
-            </select><br><br>
-
-    
-            <input type="submit" value="Submit">
-    
-            </form>
-    
-        </div>
-        
-    </div>
-
-
+</div>

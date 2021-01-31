@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bcbfbda-0d11-4dd7-a874-eb75d5f7782e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/page-not-found/page-not-found.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/page-not-found/page-not-found.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/page-not-found/page-not-found.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/page-not-found/page-not-found.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/add-events/add-events.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/add-events/add-events.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/add-events/add-events.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/add-events/add-events.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/events-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/events-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/controllers/EventController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/launchcode/RecLeagueOrganizer/controllers/SearchController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

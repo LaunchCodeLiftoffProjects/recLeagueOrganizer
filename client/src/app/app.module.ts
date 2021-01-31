@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -25,7 +26,8 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     SearchComponent,
     ProfileComponent,
     HomeComponent,
-    ScoreboardComponent
+    ScoreboardComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

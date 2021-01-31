@@ -19,18 +19,19 @@ public class SearchController {
     EventRepository eventRepository;
 
     @GetMapping("/events")
-    public List<Event> searchEvents(@RequestBody String searchTerm) {
+    public List<Event> searchEvents(@RequestBody Map <String, String> searchTerm) {
         System.out.println(searchTerm);
         List<Event> searchResults = new ArrayList<Event>();
         for(Event event: eventRepository.findAll()) {
-            if(event.getName().contains(searchTerm) ||
-                    event.getSkillLevel().contains(searchTerm) ||
-                    event.getLocation().contains(searchTerm) ||
-                    event.getEventType().contains(searchTerm) ||
-                    searchTerm.contains(event.getName()) ||
-                    searchTerm.contains(event.getSkillLevel()) ||
-                    searchTerm.contains(event.getEventType()) ||
-                    searchTerm.contains(event.getLocation())){
+            if(event.getName().toLowerCase().contains(searchTerm.get("searchT").toLowerCase()) ||
+                    event.getSkillLevel().toLowerCase().contains(searchTerm.get("searchT").toLowerCase()) ||
+                    event.getLocation().toLowerCase().contains(searchTerm.get("searchT").toLowerCase()) ||
+                    event.getEventType().toLowerCase().contains(searchTerm.get("searchT").toLowerCase()) ||
+                    searchTerm.get("searchT").toLowerCase().contains(event.getName().toLowerCase()) ||
+                    searchTerm.get("searchT").toLowerCase().contains(event.getSkillLevel().toLowerCase()) ||
+                    searchTerm.get("searchT").toLowerCase().contains(event.getEventType().toLowerCase()) ||
+                    searchTerm.get("searchT").toLowerCase().contains(event.getLocation().toLowerCase()))
+            {
                 searchResults.add(event);
             }
         }

@@ -35,8 +35,7 @@ export class AppComponent {
   }
 
   search(searchForm){
-    console.log(searchForm);
-    this.eventsService.search(searchForm).subscribe((e)=>{console.log(e)});
+    this.router.navigate(['/search', searchForm.toString()]);
   }
 
 
