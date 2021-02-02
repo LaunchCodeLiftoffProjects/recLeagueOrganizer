@@ -9,7 +9,7 @@
                     <li *ngIf="loggedin"><a routerLink = 'add-events'>Add Events</a></li>
                     <li *ngIf="loggedin"><a routerLink = 'scoreboard'>Scoreboard</a></li>
                     <li>
-                        <form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)" class = 'searchbar'>
+                        <form [formGroup]="searchForm" (ngSubmit)="search(searchForm)">
                             <input placeholder="Search" type="text" id="searchTerm" name="searchTerm" formControlName="searchTerm">
                             <input type="submit" value="submit">
                         </form>

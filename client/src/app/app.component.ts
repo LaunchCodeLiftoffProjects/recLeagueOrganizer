@@ -25,17 +25,20 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    this.form();
     if(localStorage.getItem("userId")){
       this.loggedin=true;
     }
     else{
       this.loggedin=false;
     }
-    this.form();  
+      
   }
 
   search(searchForm){
-    this.router.navigate(['/search', searchForm.toString()]);
+    console.log("1");
+    console.log(searchForm);
+    window.location.replace('/search/'+ this.searchForm.value.searchTerm);
   }
 
 
