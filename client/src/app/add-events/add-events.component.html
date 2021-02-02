@@ -2,9 +2,10 @@
 <div class = 'AddEvent'>
 
     <div style="text-align: center">
+        <h1>Create Event</h1>
 
         <form [formGroup]="eventForm" (ngSubmit)="savePost(eventForm.value)">
-
+            
             <label for="name">Event Name</label><br>
             <input type="text" id="name" name="name" formControlName="name"><br><br>
 
