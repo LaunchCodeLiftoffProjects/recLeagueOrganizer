@@ -16,14 +16,16 @@ export class SearchComponent implements OnInit {
 
 
   ngOnInit() {
-    this.searchTerm = this.route.snapshot.paramMap.get('searchTerm');
-    console.log(this.searchTerm.toString());
-    this.eventsService.search(this.searchTerm).subscribe(e=>{this.events=e;
-    console.log(this.events);
-    });
-    // this.route.paramMap.subscribe(params => {
-    //   this.searchTerm = String(params.get('searchTerm'));
-    //   console.log(this.searchTerm.toString());
-    // })
+    // this.searchTerm = this.route.snapshot.paramMap.get('searchTerm');
+    // console.log(this.searchTerm.toString());
+    
+     this.route.paramMap.subscribe(params => {
+       this.searchTerm = String(params.get('searchTerm'));
+       console.log(this.searchTerm);
+       this.eventsService.search(this.searchTerm).subscribe(e=>{
+        this.events=e;
+        console.log(this.events);
+      });
+     })
   }
 }
